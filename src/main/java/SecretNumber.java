@@ -11,11 +11,11 @@ public class SecretNumber {
 
         while ( guess != secretNumber) {
             if (guess > secretNumber) {
-                System.out.println("Lower");
+                System.out.println("Too High!");
             } else if (guess < secretNumber) {
-                System.out.println("Higher");
+                System.out.println("Too Low!");
             }
-            System.out.println("Try again!");
+            System.out.println("Try again");
             guess = reader.nextInt();
         }
 
