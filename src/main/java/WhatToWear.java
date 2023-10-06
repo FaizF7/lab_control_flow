@@ -21,9 +21,12 @@ public class WhatToWear {
             System.out.println("Wear a cap and t shirt");
         } else if ( weather.equalsIgnoreCase("sunny") && temp < 5){
             System.out.println("Wear a winter coat with woolies");
-        } else if ( weather.equalsIgnoreCase("sunny") && temp < 25){
+        } else if ( weather.equalsIgnoreCase("sunny") && temp < 25) {
             System.out.println("Wear a cap and jacket");
         }
+
+        String message = weather.equals("rainy") ? "Wear raincoat":"No raincoat needed";
+        System.out.println("Ternary: " + message);
 
     }
 }
